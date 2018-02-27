@@ -1741,7 +1741,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416668551}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2847,7 +2847,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 750244684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.51, y: 2.53, z: 26.29}
+  m_LocalPosition: {x: 55.17, y: 2.53, z: 26.29}
   m_LocalScale: {x: 4.550481, y: 5.3633327, z: 5.8856373}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4019,7 +4019,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381504785}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5387,6 +5387,7 @@ GameObject:
   - component: {fileID: 2031083794}
   - component: {fileID: 2031083797}
   - component: {fileID: 2031083798}
+  - component: {fileID: 2031083799}
   m_Layer: 0
   m_Name: block
   m_TagString: Untagged
@@ -5477,7 +5478,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2031083798
 MonoBehaviour:
@@ -5491,6 +5492,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentClass: 0
+  jumpSpeed: 5
+--- !u!114 &2031083799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031083793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bf16986a3821d4299c1c05e37ebeb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runscpt: {fileID: 0}
 --- !u!1 &2061152728
 GameObject:
   m_ObjectHideFlags: 0
