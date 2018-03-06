@@ -7,7 +7,7 @@ public class RunnerScript : MonoBehaviour {
     // Use this for initialization
     private Rigidbody rbody;
     private float runSpeed = 15;
-    public int currentClass = 0;
+    //public int currentClass = 0;
     private float jumpSpeed = 10;
     private bool grounded = true;
 	void Start ()
@@ -19,11 +19,8 @@ public class RunnerScript : MonoBehaviour {
 	void FixedUpdate ()
     {
         //rbody.AddForce(new Vector3(runSpeed, 0, 0));
-        
-        if (currentClass == 1)
-        {
-            runSpeed = 10;
-        }
+        float move = Input.GetAxis("Horizontal");
+        rbody.velocity = new Vector3(move * runSpeed, rbody.velocity.y, 0);
 
         if (Input.GetButton("Jump"))
         {
@@ -37,10 +34,7 @@ public class RunnerScript : MonoBehaviour {
             Vector3 extraGravityForce = (Physics.gravity * 1.5f) - Physics.gravity;
             rbody.AddForce(extraGravityForce);
         }
-        else
-        {
-            rbody.velocity = new Vector3(runSpeed, 0, 0);
-        }
+       
 
     }
 

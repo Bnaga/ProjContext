@@ -19,7 +19,7 @@ public class TestScript : MonoBehaviour {
     {
         if(other.tag == "class1")
         {
-            runscpt.currentClass = 1;
+            //runscpt.currentClass = 1;
         }
     }
 }
