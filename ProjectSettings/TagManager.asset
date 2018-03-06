@@ -8,6 +8,7 @@ TagManager:
   - class2
   - class3
   - terrain
+  - Player1
   layers:
   - Default
   - TransparentFX
