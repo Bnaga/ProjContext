@@ -16,4 +16,12 @@ public class WallScript : MonoBehaviour {
     {
         rbody.velocity = new Vector3(wallSpeed, 0, 0);
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag.Contains("Player"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
