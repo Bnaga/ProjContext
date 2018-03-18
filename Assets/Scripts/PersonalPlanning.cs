@@ -19,38 +19,149 @@ public class PersonalPlanning : MonoBehaviour {
     #endregion
 
     public delegate void OnTaskChanged();
-    public OnTaskChanged onTaskChangedCallback;
+    public OnTaskChanged onTaskChangedCallback1;
+    public OnTaskChanged onTaskChangedCallback2;
+    public OnTaskChanged onTaskChangedCallback3;
+    public OnTaskChanged onTaskChangedCallback4;
 
     public int space = 5;
 
-    public List<Task> tasks = new List<Task>();
+    public List<Task> tasksP1 = new List<Task>();
+    public List<Task> tasksP2 = new List<Task>();
+    public List<Task> tasksP3 = new List<Task>();
+    public List<Task> tasksP4 = new List<Task>();
 
-    public bool Add(Task task)
+    public bool AddPlayer1(Task task)
     {
         if (!task.isDefaultTask)
         {
-            if(tasks.Count >= space)
+            if(tasksP1.Count >= space)
             {
                 Debug.Log("planning full");
                 return false;
             }
-            tasks.Add(task);
+            tasksP1.Add(task);
 
-            if (onTaskChangedCallback != null)
+            if (onTaskChangedCallback1 != null)
             {
-                onTaskChangedCallback.Invoke();
+                onTaskChangedCallback1.Invoke();
             }
         }
         return true;
     }
 
-    public void Remove(Task task)
+    public bool AddPlayer2(Task task)
     {
-        tasks.Remove(task);
-
-        if (onTaskChangedCallback != null)
+        if (!task.isDefaultTask)
         {
-            onTaskChangedCallback.Invoke();
+            if (tasksP2.Count >= space)
+            {
+                Debug.Log("planning full");
+                return false;
+            }
+            tasksP2.Add(task);
+
+            if (onTaskChangedCallback2 != null)
+            {
+                onTaskChangedCallback2.Invoke();
+            }
         }
+        return true;
+    }
+
+    public bool AddPlayer3(Task task)
+    {
+        if (!task.isDefaultTask)
+        {
+            if (tasksP3.Count >= space)
+            {
+                Debug.Log("planning full");
+                return false;
+            }
+            tasksP3.Add(task);
+
+            if (onTaskChangedCallback3 != null)
+            {
+                onTaskChangedCallback3.Invoke();
+            }
+        }
+        return true;
+    }
+
+    public bool AddPlayer4(Task task)
+    {
+        if (!task.isDefaultTask)
+        {
+            if (tasksP4.Count >= space)
+            {
+                Debug.Log("planning full");
+                return false;
+            }
+            tasksP4.Add(task);
+
+            if (onTaskChangedCallback4 != null)
+            {
+                onTaskChangedCallback4.Invoke();
+            }
+        }
+        return true;
+    }
+
+    public void RemoveP1(Task task)
+    {
+        tasksP1.Remove(task);
+
+        if (onTaskChangedCallback1 != null)
+        {
+            onTaskChangedCallback1.Invoke();
+        }
+    }
+
+    public void RemoveP2(Task task)
+    {
+        tasksP1.Remove(task);
+
+        if (onTaskChangedCallback2 != null)
+        {
+            onTaskChangedCallback2.Invoke();
+        }
+    }
+
+    public void RemoveP3(Task task)
+    {
+        tasksP1.Remove(task);
+
+        if (onTaskChangedCallback3 != null)
+        {
+            onTaskChangedCallback3.Invoke();
+        }
+    }
+
+    public void RemoveP4(Task task)
+    {
+        tasksP1.Remove(task);
+
+        if (onTaskChangedCallback4 != null)
+        {
+            onTaskChangedCallback4.Invoke();
+        }
+    }
+
+    public int LenP1()
+    {
+        return tasksP1.Count;
+    }
+
+    public int LenP2()
+    {
+        return tasksP2.Count;
+    }
+    public int LenP3()
+    {
+        return tasksP3.Count;
+    }
+    public int LenP4()
+    {
+        return tasksP4.Count;
     }
 }

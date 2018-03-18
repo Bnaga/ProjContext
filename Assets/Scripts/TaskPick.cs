@@ -8,8 +8,8 @@ public class TaskPick : MonoBehaviour {
     public Task task;
     public Button button;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -18,14 +18,71 @@ public class TaskPick : MonoBehaviour {
 		
 	}
 
-    public void PickTask()
-    { 
-    
-        Debug.Log("Picking " +  task.name);
-        bool wasPicked = PersonalPlanning.instance.Add(task);
-        if (wasPicked)
+    public void PickTask1()
+    {
+        if (button.interactable)
         {
-            button.interactable = false;
+            Debug.Log("Picking " + task.name);
+            bool wasPicked = PersonalPlanning.instance.AddPlayer1(task);
+            if (wasPicked)
+            {
+                button.interactable = false;
+            }
+        }
+        else
+        {
+            Debug.Log("already chosen");
+        }
+    }
+
+    public void PickTask2()
+    {
+        if (button.interactable)
+        {
+            Debug.Log("Picking " + task.name);
+            bool wasPicked = PersonalPlanning.instance.AddPlayer2(task);
+            if (wasPicked)
+            {
+                button.interactable = false;
+            }
+        }
+        else
+        {
+            Debug.Log("already chosen");
+        }
+    }
+
+    public void PickTask3()
+    {
+        if (button.interactable)
+        {
+            Debug.Log("Picking " + task.name);
+            bool wasPicked = PersonalPlanning.instance.AddPlayer3(task);
+            if (wasPicked)
+            {
+                button.interactable = false;
+            }
+        }
+        else
+        {
+            Debug.Log("already chosen");
+        }
+    }
+
+    public void PickTask4()
+    {
+        if (button.interactable)
+        {
+            Debug.Log("Picking " + task.name);
+            bool wasPicked = PersonalPlanning.instance.AddPlayer4(task);
+            if (wasPicked)
+            {
+                button.interactable = false;
+            }
+        }
+        else
+        {
+            Debug.Log("already chosen");
         }
     }
 }

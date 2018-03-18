@@ -4,11 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - class1
-  - class2
-  - class3
-  - terrain
-  - Player1
+  - green
+  - yellow
+  - pink
+  - blue
+  - green2
+  - yellow2
+  - pink2
+  - blue2
   layers:
   - Default
   - TransparentFX

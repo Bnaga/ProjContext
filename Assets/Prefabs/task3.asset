@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c91c8fcf80a1954a9992432f7e7be6d, type: 3}
-  m_Name: test task
+  m_Name: task3
   m_EditorClassIdentifier: 
-  taskName: Test Task
-  icon: {fileID: 21300000, guid: 6939fa3d7100c4648aed9f2bc52a7e97, type: 3}
+  taskName: task3
+  icon: {fileID: 21300000, guid: fbe1b72ca96388a41b4d6af197459782, type: 3}
   isDefaultTask: 0
