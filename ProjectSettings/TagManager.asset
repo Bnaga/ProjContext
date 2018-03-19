@@ -12,6 +12,15 @@ TagManager:
   - yellow2
   - pink2
   - blue2
+  - class1
+  - green3
+  - yellow3
+  - blue3
+  - pink3
+  - green4
+  - yellow4
+  - blue4
+  - pink4
   layers:
   - Default
   - TransparentFX

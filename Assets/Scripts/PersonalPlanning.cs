@@ -9,6 +9,7 @@ public class PersonalPlanning : MonoBehaviour {
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         if(instance != null)
         {
             Debug.LogWarning("more than one instance of planning found!");
@@ -22,7 +23,7 @@ public class PersonalPlanning : MonoBehaviour {
     public OnTaskChanged onTaskChangedCallback1;
     public OnTaskChanged onTaskChangedCallback2;
     public OnTaskChanged onTaskChangedCallback3;
-    public OnTaskChanged onTaskChangedCallback4;
+    public OnTaskChanged onTaskChangedCallback4; 
 
     public int space = 5;
 
@@ -31,6 +32,8 @@ public class PersonalPlanning : MonoBehaviour {
     public List<Task> tasksP3 = new List<Task>();
     public List<Task> tasksP4 = new List<Task>();
 
+
+    #region AddTasktoPlayers
     public bool AddPlayer1(Task task)
     {
         if (!task.isDefaultTask)
@@ -106,7 +109,9 @@ public class PersonalPlanning : MonoBehaviour {
         }
         return true;
     }
+    #endregion
 
+    #region RemoveTasks
     public void RemoveP1(Task task)
     {
         tasksP1.Remove(task);
@@ -146,7 +151,9 @@ public class PersonalPlanning : MonoBehaviour {
             onTaskChangedCallback4.Invoke();
         }
     }
+    #endregion
 
+    #region LengthTasks
     public int LenP1()
     {
         return tasksP1.Count;
@@ -164,4 +171,5 @@ public class PersonalPlanning : MonoBehaviour {
     {
         return tasksP4.Count;
     }
+    #endregion
 }

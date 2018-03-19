@@ -28,7 +28,7 @@ public class RoundManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonUp("Jump"))
+		if(Input.GetButtonUp("Jump") && currentRound < 4)
         {
             currentRound += 1;
             Debug.Log(currentRound);
@@ -43,5 +43,25 @@ public class RoundManager : MonoBehaviour {
             round2pink.interactable = true;
             roundChange = false;
         }
-	}
+
+        if (currentRound == 3 && roundChange)
+        {
+            round3green.interactable = true;
+            round3yellow.interactable = true;
+            round3blue.interactable = true;
+            round3pink.interactable = true;
+            roundChange = false;
+        }
+
+        if (currentRound == 4 && roundChange)
+        {
+            round4green.interactable = true;
+            round4yellow.interactable = true;
+            round4blue.interactable = true;
+            round4pink.interactable = true;
+            roundChange = false;
+        }
+    }
 }
+
+

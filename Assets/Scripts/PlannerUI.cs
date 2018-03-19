@@ -34,6 +34,7 @@ public class PlannerUI : MonoBehaviour {
 		
 	}
 
+    #region UpdateUI
     void UpdateUI1()
     {
         Debug.Log("updating UI1");
@@ -99,4 +100,5 @@ public class PlannerUI : MonoBehaviour {
             }
         }
     }
+    #endregion
 }
