@@ -32,5 +32,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Assets/Scenes/Mainmenu.unity
-Assets/Scenes/Mainmenu.unity.meta
+
