@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Mainmenu.unity
     guid: 0f721aec062f1d947b152f84ca21faa6
   - enabled: 1
-    path: Assets/Scenes/Blokout.unity
-    guid: 1037cb1207f6b7f4ab1695f0efecc544
+    path: Assets/Scenes/plan.unity
+    guid: f329cfc45a1a1fc49818809802960d96
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: f65d8ac5a8bc81a419d3d9fd653ebacc
