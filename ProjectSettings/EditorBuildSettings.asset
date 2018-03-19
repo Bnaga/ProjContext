@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/plan.unity
+    guid: f329cfc45a1a1fc49818809802960d96
+  - enabled: 1
+    path: Assets/Scenes/test3.unity
+    guid: 5160266d8ba3ffc4f96b303fc0b6884b
+  - enabled: 1
+    path: Assets/Scenes/gameovertest.unity
+    guid: c23d5eab2c07d3541b8546fbfbd734af

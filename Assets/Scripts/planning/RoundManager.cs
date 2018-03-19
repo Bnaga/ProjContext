@@ -19,7 +19,7 @@ public class RoundManager : MonoBehaviour {
     public Button round4pink;
 
     public int currentRound = 1;
-    bool roundChange = false;
+    public bool roundChange = false;
     
     // Use this for initialization
     void Start () {
