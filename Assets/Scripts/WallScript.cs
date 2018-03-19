@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WallScript : MonoBehaviour {
 
@@ -21,7 +22,7 @@ public class WallScript : MonoBehaviour {
     {
         if(collision.collider.tag.Contains("Player"))
         {
-            Destroy(collision.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
