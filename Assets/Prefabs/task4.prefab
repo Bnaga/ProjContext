@@ -22,9 +22,11 @@ GameObject:
   - component: {fileID: 212404530937634088}
   - component: {fileID: 65865666885243108}
   - component: {fileID: 54990554646875880}
+  - component: {fileID: 114879836720143524}
+  - component: {fileID: 65481787685593844}
   m_Layer: 0
   m_Name: task4
-  m_TagString: Untagged
+  m_TagString: pink
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +59,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!65 &65865666885243108
+--- !u!65 &65481787685593844
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -69,6 +71,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.72, y: 3.73, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65865666885243108
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576273149257456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.841168, y: 3.73, z: 9.2550125}
+  m_Center: {x: 0.015406805, y: 0, z: 0.73223495}
+--- !u!114 &114879836720143524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576273149257456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f1c3c903b2ff5439597a3957743449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  task: {fileID: 11400000, guid: 7d119ab6e4873cd47adef753b68a0424, type: 2}
 --- !u!212 &212404530937634088
 SpriteRenderer:
   m_ObjectHideFlags: 1
