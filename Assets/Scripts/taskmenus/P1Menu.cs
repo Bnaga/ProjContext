@@ -8,13 +8,18 @@ public class P1Menu : MonoBehaviour {
 
     PersonalPlanning planning;
     TaskSpot[] spotsP1;
+    public TaskSpot spot1;
+    public TaskSpot spot2;
+    public TaskSpot spot3;
+    public TaskSpot spot4;
+    public TaskSpot spot5;
 
     public bool p1Paused = false;
     public GameObject p1Menu;
     public GameObject player;
     public GameObject player1;
 
-    public Rigidbody task;
+    private Rigidbody task;
     private float xShot = 1.5f;
     private float throwSpeed = 15;
 
@@ -45,6 +50,27 @@ public class P1Menu : MonoBehaviour {
         {
             p1Menu.SetActive(true);
             Time.timeScale = 0f;
+
+            if (Input.GetKeyUp(KeyCode.Alpha1))
+            {
+                ThrowTask1(spot1);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha2))
+            {
+                ThrowTask1(spot2);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha3))
+            {
+                ThrowTask1(spot3);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha4))
+            {
+                ThrowTask1(spot4);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha5))
+            {
+                ThrowTask1(spot5);
+            }
         }
         else
         {
@@ -56,21 +82,19 @@ public class P1Menu : MonoBehaviour {
         {
             p1Paused = !p1Paused;
         }
+
     }
 
-    public void ThrowTask1()
+    public void ThrowTask1(TaskSpot spot)
     {
+        task = spot.GetTask().GetComponent<Rigidbody>();
         Rigidbody taskThrow = Instantiate(task, new Vector3(player.transform.position.x + xShot, player.transform.position.y, player.transform.position.z), Quaternion.identity) as Rigidbody;
         //taskThrow.AddForce(player.transform.right * throwSpeed);
         taskThrow.velocity = (new Vector3(throwSpeed, 6.5f, 0));
         //throwSpeed *= 0.8f;
         p1Paused = !p1Paused;
+        spot.OnTaskThrowP1();
         
-    }
-
-    public void ShowList()
-    {
-
     }
 
     void UpdateUI1()

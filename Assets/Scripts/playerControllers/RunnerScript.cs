@@ -7,6 +7,7 @@ public class RunnerScript : MonoBehaviour {
     // Use this for initialization
     private Rigidbody rbody;
     private float runSpeed = 15;
+    private float runMod = 0;
     //public int currentClass = 0;
     private float jumpSpeed = 10;
     private bool grounded = true;
@@ -19,13 +20,27 @@ public class RunnerScript : MonoBehaviour {
 	void FixedUpdate ()
     {
         //rbody.AddForce(new Vector3(runSpeed, 0, 0));
-        float move = Input.GetAxis("Horizontal");
-        rbody.velocity = new Vector3(move * runSpeed, rbody.velocity.y, 0);
+        //float move = Input.GetAxis("Horizontal");
+        //rbody.velocity = new Vector3(move * runSpeed, rbody.velocity.y, 0);
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            runMod = 1f;
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            runMod = -1f;
+        }
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            runMod = 0;
+        }
 
-        if (Input.GetButton("Jump"))
+        rbody.velocity = new Vector3(runMod*runSpeed, rbody.velocity.y, 0);
+
+        if (Input.GetKey(KeyCode.W))
         {
             Debug.Log("jump");
-            rbody.velocity = new Vector3(runSpeed, jumpSpeed, 0);
+            rbody.velocity = new Vector3(runSpeed*runMod, jumpSpeed, 0);
             grounded = false;
             //rbody.AddForce(new Vector3(50, jumpSpeed, 0));
         }

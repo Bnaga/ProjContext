@@ -21,6 +21,11 @@ TagManager:
   - yellow4
   - blue4
   - pink4
+  - terrain
+  - Player1
+  - Player2
+  - Player3
+  - Player4
   layers:
   - Default
   - TransparentFX
