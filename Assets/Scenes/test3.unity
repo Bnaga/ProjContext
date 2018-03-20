@@ -2721,6 +2721,7 @@ GameObject:
   - component: {fileID: 626118989}
   - component: {fileID: 626118988}
   - component: {fileID: 626118986}
+  - component: {fileID: 626118987}
   m_Layer: 0
   m_Name: player4
   m_TagString: Player4
@@ -2737,6 +2738,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c191b51afec2df148a40f84b5d8ec75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &626118987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 626118985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ff9cfdd72cc0e408bb0106a0cdfaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &626118988
@@ -3170,6 +3182,7 @@ GameObject:
   - component: {fileID: 668838504}
   - component: {fileID: 668838503}
   - component: {fileID: 668838501}
+  - component: {fileID: 668838502}
   m_Layer: 0
   m_Name: player3
   m_TagString: Player3
@@ -3186,6 +3199,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0edbbd2b32d2be14abc1cc943866a0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &668838502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668838500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ff9cfdd72cc0e408bb0106a0cdfaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &668838503
@@ -3681,7 +3705,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723535687}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &723535690
 Behaviour:
   m_ObjectHideFlags: 0
@@ -3701,10 +3725,10 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.5
     y: 0
-    width: 1
-    height: 1
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 16.96326
@@ -6364,7 +6388,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283150585}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1283150588
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6386,8 +6410,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 16.96326
@@ -6559,7 +6583,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1320706175}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1320706178
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6579,10 +6603,10 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.5
+    y: 0.5
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 16.96326
@@ -7828,9 +7852,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.5
+    width: 0.5
+    height: 0.5
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 16.96326
@@ -8105,6 +8129,7 @@ GameObject:
   - component: {fileID: 1728780715}
   - component: {fileID: 1728780714}
   - component: {fileID: 1728780713}
+  - component: {fileID: 1728780712}
   - component: {fileID: 1728780711}
   m_Layer: 0
   m_Name: player2
@@ -8124,6 +8149,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1728780712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1728780710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f1c3c903b2ff5439597a3957743449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  task: {fileID: 0}
 --- !u!54 &1728780713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9187,6 +9224,8 @@ GameObject:
   - component: {fileID: 2031083794}
   - component: {fileID: 2031083797}
   - component: {fileID: 2031083798}
+  - component: {fileID: 2031083800}
+  - component: {fileID: 2031083799}
   m_Layer: 0
   m_Name: player1
   m_TagString: Player1
@@ -9288,6 +9327,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 133d310ae4716bc4aa06753ccce75437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2031083799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031083793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a17d216b4cd3e947964d78ef81139d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2031083800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031083793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ff9cfdd72cc0e408bb0106a0cdfaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2034636755

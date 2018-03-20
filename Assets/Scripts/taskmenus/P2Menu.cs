@@ -77,7 +77,7 @@ public class P2Menu : MonoBehaviour {
             Time.timeScale = 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             p1Paused = !p1Paused;
         }
@@ -98,7 +98,7 @@ public class P2Menu : MonoBehaviour {
 
     void UpdateUI2()
     {
-        Debug.Log("updating UI1");
+        //Debug.Log("updating UI1");
 
         for (int i = 0; i < spotsP2.Length; i++)
         {

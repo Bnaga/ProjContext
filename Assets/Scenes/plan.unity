@@ -879,7 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37eedde72f6cf9c46a665781b4d95006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  task: {fileID: 11400000, guid: 92716f071aca32848ad328ee5024c424, type: 2}
+  task: {fileID: 11400000, guid: 7d119ab6e4873cd47adef753b68a0424, type: 2}
   button: {fileID: 401246506}
 --- !u!1001 &449240795
 Prefab:
@@ -995,6 +995,73 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224565283072431296, guid: 9e913e7171ecf084ca14e202f532df8d,
     type: 2}
   m_PrefabInternal: {fileID: 449240795}
+--- !u!1 &584393917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 584393920}
+  - component: {fileID: 584393919}
+  - component: {fileID: 584393918}
+  m_Layer: 0
+  m_Name: gameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &584393918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584393917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bedb59da8b763554786492b311119cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  round2green: {fileID: 294559853}
+  round2yellow: {fileID: 1178793036}
+  round2blue: {fileID: 1079283944}
+  round2pink: {fileID: 1358297715}
+  round3green: {fileID: 1722169266}
+  round3yellow: {fileID: 326286414}
+  round3blue: {fileID: 1270571352}
+  round3pink: {fileID: 864074917}
+  round4green: {fileID: 1893775398}
+  round4yellow: {fileID: 968635840}
+  round4blue: {fileID: 1195896993}
+  round4pink: {fileID: 401246506}
+  currentRound: 1
+  roundChange: 0
+--- !u!114 &584393919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584393917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56acb253501e6243a15571f2d5428a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundMan: {fileID: 584393918}
+--- !u!4 &584393920
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584393917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 574, y: 316, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &641791478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,7 +1091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeLim: 10
   roundTime: 10
-  roundMan: {fileID: 1807139294}
+  roundMan: {fileID: 584393918}
 --- !u!4 &641791480
 Transform:
   m_ObjectHideFlags: 0
@@ -3810,8 +3877,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1807139291}
   - component: {fileID: 1807139292}
-  - component: {fileID: 1807139293}
-  - component: {fileID: 1807139294}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3848,43 +3913,6 @@ MonoBehaviour:
   tasksP2: []
   tasksP3: []
   tasksP4: []
---- !u!114 &1807139293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1807139290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56acb253501e6243a15571f2d5428a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roundMan: {fileID: 1807139294}
---- !u!114 &1807139294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1807139290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bedb59da8b763554786492b311119cb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  round2green: {fileID: 294559853}
-  round2yellow: {fileID: 1178793036}
-  round2blue: {fileID: 1079283944}
-  round2pink: {fileID: 1358297715}
-  round3green: {fileID: 1722169266}
-  round3yellow: {fileID: 326286414}
-  round3blue: {fileID: 1270571352}
-  round3pink: {fileID: 864074917}
-  round4green: {fileID: 1893775398}
-  round4yellow: {fileID: 968635840}
-  round4blue: {fileID: 1195896993}
-  round4pink: {fileID: 401246506}
-  currentRound: 1
-  roundChange: 0
 --- !u!1 &1859589813
 GameObject:
   m_ObjectHideFlags: 0

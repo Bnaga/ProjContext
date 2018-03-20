@@ -99,7 +99,7 @@ public class P1Menu : MonoBehaviour {
 
     void UpdateUI1()
     {
-        Debug.Log("updating UI1");
+        //Debug.Log("updating UI1");
 
         for (int i = 0; i < spotsP1.Length; i++)
         {
