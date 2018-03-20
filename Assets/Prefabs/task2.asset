@@ -14,3 +14,4 @@ MonoBehaviour:
   taskName: task2
   icon: {fileID: 21300000, guid: dd6910d831547e64ca22b4e772e7f601, type: 3}
   isDefaultTask: 0
+  task: {fileID: 1575365424348472, guid: 3622438acde7d4d409667f607fcd1a2b, type: 2}

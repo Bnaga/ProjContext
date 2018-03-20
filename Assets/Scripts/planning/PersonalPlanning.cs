@@ -124,7 +124,7 @@ public class PersonalPlanning : MonoBehaviour {
 
     public void RemoveP2(Task task)
     {
-        tasksP1.Remove(task);
+        tasksP2.Remove(task);
 
         if (onTaskChangedCallback2 != null)
         {
@@ -134,7 +134,7 @@ public class PersonalPlanning : MonoBehaviour {
 
     public void RemoveP3(Task task)
     {
-        tasksP1.Remove(task);
+        tasksP3.Remove(task);
 
         if (onTaskChangedCallback3 != null)
         {
@@ -144,7 +144,7 @@ public class PersonalPlanning : MonoBehaviour {
 
     public void RemoveP4(Task task)
     {
-        tasksP1.Remove(task);
+        tasksP4.Remove(task);
 
         if (onTaskChangedCallback4 != null)
         {

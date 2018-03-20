@@ -22,4 +22,26 @@ public class TaskSpot : MonoBehaviour {
         icon.sprite = null;
         icon.enabled = false;
     }
+
+    public void OnTaskThrowP1()
+    {
+        PersonalPlanning.instance.RemoveP1(task);
+    }
+    public void OnTaskThrowP2()
+    {
+        PersonalPlanning.instance.RemoveP2(task);
+    }
+    public void OnTaskThrowP3()
+    {
+        PersonalPlanning.instance.RemoveP3(task);
+    }
+    public void OnTaskThrowP4()
+    {
+        PersonalPlanning.instance.RemoveP4(task);
+    }
+
+    public GameObject GetTask()
+    {
+        return task.task;
+    }
 }
