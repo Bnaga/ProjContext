@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpTwo : MonoBehaviour {
+public class PickUpFour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +16,7 @@ public class PickUpTwo : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (PersonalPlanning.instance.tasksP1.Count < 5)
+        if (PersonalPlanning.instance.tasksP3.Count < 5)
         {
             if (other.tag == "green" || other.tag == "yellow" || other.tag == "blue" || other.tag == "pink")
             {

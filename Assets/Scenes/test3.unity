@@ -2748,7 +2748,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 626118985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2ff9cfdd72cc0e408bb0106a0cdfaf8, type: 3}
+  m_Script: {fileID: 11500000, guid: b1e0e4941e702c74dab57fc8af80219c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &626118988
@@ -3209,7 +3209,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 668838500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2ff9cfdd72cc0e408bb0106a0cdfaf8, type: 3}
+  m_Script: {fileID: 11500000, guid: 176ba24c40c95064182270fa82b41d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &668838503
@@ -8146,7 +8146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1728780710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
+  m_Script: {fileID: 11500000, guid: 8912604d52d254841a4400e03101b171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1728780712
@@ -8157,10 +8157,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1728780710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93f1c3c903b2ff5439597a3957743449, type: 3}
+  m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  task: {fileID: 0}
 --- !u!54 &1728780713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9224,7 +9223,6 @@ GameObject:
   - component: {fileID: 2031083794}
   - component: {fileID: 2031083797}
   - component: {fileID: 2031083798}
-  - component: {fileID: 2031083800}
   - component: {fileID: 2031083799}
   m_Layer: 0
   m_Name: player1
@@ -9337,20 +9335,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2031083793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a17d216b4cd3e947964d78ef81139d0, type: 3}
+  m_Script: {fileID: 11500000, guid: c17b87f213f5fc446b1ea67de604a1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2031083800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2031083793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2ff9cfdd72cc0e408bb0106a0cdfaf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  spot1: {fileID: 0}
+  spot2: {fileID: 0}
+  spot3: {fileID: 0}
+  spot4: {fileID: 0}
+  spot5: {fileID: 0}
+  p1Paused: 0
+  p1Menu: {fileID: 0}
+  player: {fileID: 0}
+  player1: {fileID: 0}
+  task1: {fileID: 0}
+  task2: {fileID: 0}
+  task3: {fileID: 0}
+  task4: {fileID: 0}
+  task5: {fileID: 0}
 --- !u!1 &2034636755
 GameObject:
   m_ObjectHideFlags: 0

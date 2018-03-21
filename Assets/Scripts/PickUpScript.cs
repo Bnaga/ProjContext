@@ -72,7 +72,7 @@ public class PickUpScript : MonoBehaviour {
 
                 Destroy(this.gameObject);
             }
-            else Debug.Log("taskbar full");
+            else Debug.Log("taskbar 1 full");
         }
         if (other.tag == "Player2")
         {
@@ -81,25 +81,25 @@ public class PickUpScript : MonoBehaviour {
             {
                 Destroy(this.gameObject);
             }
-            else Debug.Log("taskbar full");
+            else Debug.Log("taskbar 2 full");
         }
         if (other.tag == "Player3")
         {
-            bool pickUp = PersonalPlanning.instance.AddPlayer2(task);
+            bool pickUp = PersonalPlanning.instance.AddPlayer3(task);
             if (pickUp)
             {
                 Destroy(this.gameObject);
             }
-            else Debug.Log("taskbar full");
+            else Debug.Log("taskbar 3 full");
         }
         if (other.tag == "Player4")
         {
-            bool pickUp = PersonalPlanning.instance.AddPlayer2(task);
+            bool pickUp = PersonalPlanning.instance.AddPlayer4(task);
             if (pickUp)
             {
                 Destroy(this.gameObject);
             }
-            else Debug.Log("taskbar full");
+            else Debug.Log("taskbar 4 full");
         }
     }
 }
