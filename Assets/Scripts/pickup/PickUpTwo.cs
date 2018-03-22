@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpTwo : MonoBehaviour {
+public class PickUpTwo : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(PersonalPlanning.instance.tasksP1.Count < 5)
+        {
+            //Debug.Log(PersonalPlanning.instance.tasksP1.Count);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,3 +31,4 @@ public class PickUpTwo : MonoBehaviour {
         }
     }
 }
+

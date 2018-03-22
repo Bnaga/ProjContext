@@ -11,18 +11,26 @@ public class WallScript : MonoBehaviour {
 	void Start () {
         rbody = this.gameObject.GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    private void Update()
     {
-        rbody.velocity = new Vector3(wallSpeed, 0, 0);
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate ()
+    {
+        //rbody.velocity = new Vector3(wallSpeed, 0, 0);
 	}
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.tag.Contains("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Destroy(collision.collider.gameObject);
         }
     }
+
+    
 }

@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RoundTimer : MonoBehaviour {
     public float timeLim = 10;
     public float roundTime = 10;
     public RoundManager roundMan;
-	// Use this for initialization
-	void Start ()
+    public Text timer;
+    public float timerTime = 0;
+
+    // Use this for initialization
+    void Start ()
     {
 		
 	}
 	
 	// Update is called once per frame
 	void Update ()
-    {
+    { 
         CountDown();
-	}
+        timerTime = Mathf.Round(roundTime * 100.0f) / 100.0f;
+        timer.text = timerTime.ToString();
+    }
 
     void CountDown()
     {

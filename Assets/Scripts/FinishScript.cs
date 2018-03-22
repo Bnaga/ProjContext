@@ -6,17 +6,28 @@ using UnityEngine.SceneManagement;
 public class FinishScript : MonoBehaviour {
 
     int playerCount = 0;
-	// Use this for initialization
-	void Start () {
+    public float timeLim = 15;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if(playerCount == 1)
+        if(playerCount >=1)
+        {
+            timeLim -= Time.deltaTime;
+        }
+
+        if(playerCount <4 && timeLim <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+		if(playerCount == 4)
+        {
+            SceneManager.LoadScene(4);
         }
 	}
 

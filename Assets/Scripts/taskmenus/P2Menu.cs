@@ -13,16 +13,14 @@ public class P2Menu : MonoBehaviour {
     public TaskSpot spot4;
     public TaskSpot spot5;
 
-    //public bool p1Paused = false;
+    public bool p1Paused = false;
     public GameObject p2Menu;
     public GameObject player;
     public GameObject player2;
 
-    public PauseScript pause;
-
     private Rigidbody task;
     private float xShot = 1.5f;
-    private float throwSpeed = 10;
+    private float throwSpeed = 15;
 
     public Button task1;
     //public GameObject taskObj1;
@@ -47,7 +45,7 @@ public class P2Menu : MonoBehaviour {
     void Update()
     {
         UpdateUI2();
-        if (pause.isPaused)
+        if (p1Paused)
         {
             p2Menu.SetActive(true);
             Time.timeScale = 0f;
@@ -81,7 +79,7 @@ public class P2Menu : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.RightControl))
         {
-            pause.isPaused = !pause.isPaused;
+            p1Paused = !p1Paused;
         }
 
     }
@@ -93,7 +91,7 @@ public class P2Menu : MonoBehaviour {
         //taskThrow.AddForce(player.transform.right * throwSpeed);
         taskThrow.velocity = (new Vector3(throwSpeed, 6.5f, 0));
         //throwSpeed *= 0.8f;
-        pause.isPaused = !pause.isPaused;
+        p1Paused = !p1Paused;
         spot.OnTaskThrowP2();
 
     }
