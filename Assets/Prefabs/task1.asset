@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: task1
   m_EditorClassIdentifier: 
   taskName: Test Task
-  icon: {fileID: 21300000, guid: 6939fa3d7100c4648aed9f2bc52a7e97, type: 3}
+  icon: {fileID: 21300000, guid: 1fd8456778da97047b8be0faf01eb928, type: 3}
   isDefaultTask: 0
   task: {fileID: 1538258706226320, guid: 48d0cd1e511d7304fbceed92d378d5e1, type: 2}
