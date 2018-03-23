@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1575365424348472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.98, y: 1.91, z: 21.18}
-  m_LocalScale: {x: 0.16056743, y: 0.16035499, z: 1}
+  m_LocalPosition: {x: 58.629467, y: 1.08, z: 23.28}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -69,8 +69,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.841168, y: 3.73, z: 9.2550125}
-  m_Center: {x: 0.015406805, y: 0, z: 0.73223495}
+  m_Size: {x: 2.5299072, y: 2.704146, z: 5.4030704}
+  m_Center: {x: 0.01928711, y: 0.51292706, z: -0.34067822}
 --- !u!65 &65809660947472198
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -81,8 +81,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.72, y: 3.73, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6170502, y: 1.4771867, z: 0.2}
+  m_Center: {x: 0.006942749, y: 0.1635561, z: 0}
 --- !u!114 &114646670343354894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,7 +129,7 @@ SpriteRenderer:
   m_SortingLayerID: 1901943343
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dd6910d831547e64ca22b4e772e7f601, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80f62af7115204648aeed9939bea96e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
