@@ -36,7 +36,7 @@ public class P4Menu : MonoBehaviour {
     void Start()
     {
         planning = PersonalPlanning.instance;
-        player = GameObject.FindGameObjectWithTag("Player1");
+        player = GameObject.FindGameObjectWithTag("Player4");
         spotsP4 = player4.GetComponentsInChildren<TaskSpot>();
 
     }
