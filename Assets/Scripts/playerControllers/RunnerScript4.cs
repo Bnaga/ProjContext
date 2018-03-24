@@ -16,7 +16,7 @@ public class RunnerScript4 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         //rbody.AddForce(new Vector3(runSpeed, 0, 0));
         //float move = Input.GetAxis("Horizontal");
