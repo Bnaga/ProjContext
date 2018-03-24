@@ -538,7 +538,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!65 &23275549
 BoxCollider:
@@ -5683,6 +5683,31 @@ Prefab:
       propertyPath: rbody
       value: 
       objectReference: {fileID: 101075855}
+    - target: {fileID: 65918427156873752, guid: 06bc0ed46bec06741ba4f67a3a4752fc,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 1.0933068
+      objectReference: {fileID: 0}
+    - target: {fileID: 65918427156873752, guid: 06bc0ed46bec06741ba4f67a3a4752fc,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -3.686502e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 65918427156873752, guid: 06bc0ed46bec06741ba4f67a3a4752fc,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.039730027
+      objectReference: {fileID: 0}
+    - target: {fileID: 65918427156873752, guid: 06bc0ed46bec06741ba4f67a3a4752fc,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.0047384473
+      objectReference: {fileID: 0}
+    - target: {fileID: 65918427156873752, guid: 06bc0ed46bec06741ba4f67a3a4752fc,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.1377932
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 33568848757367114, guid: 06bc0ed46bec06741ba4f67a3a4752fc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 06bc0ed46bec06741ba4f67a3a4752fc, type: 2}
@@ -20351,7 +20376,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1805140812
+  randomSeed: 1914940635
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -28523,7 +28548,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!65 &1300452215
 BoxCollider:
@@ -33062,7 +33087,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!65 &1617784248
 BoxCollider:
@@ -34338,7 +34363,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 421396838
+  randomSeed: 303842296
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -42769,7 +42794,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1436984206
+  randomSeed: 164899717
   InitialModule:
     serializedVersion: 3
     enabled: 1
