@@ -5,11 +5,12 @@ using UnityEngine;
 public class RunnerScript4 : MonoBehaviour
 {
     private Rigidbody rbody;
-    private float runSpeed = 15;
+    private float runSpeed = 12.5f;
     private float runMod = 0;
     //public int currentClass = 0;
-    private float jumpSpeed = 10;
+    private float jumpSpeed = 6;
     private bool grounded = true;
+    private bool walled = false;
     void Start()
     {
         rbody = this.gameObject.GetComponent<Rigidbody>();
@@ -21,22 +22,25 @@ public class RunnerScript4 : MonoBehaviour
         //rbody.AddForce(new Vector3(runSpeed, 0, 0));
         //float move = Input.GetAxis("Horizontal");
         //rbody.velocity = new Vector3(move * runSpeed, rbody.velocity.y, 0);
-        if (Input.GetKeyDown(KeyCode.L))
+        if (!walled)
         {
-            runMod = 1f;
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            runMod = -1f;
-        }
-        if (Input.GetKeyUp(KeyCode.L) || Input.GetKeyUp(KeyCode.J))
-        {
-            runMod = 0;
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                runMod = 1f;
+            }
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                runMod = -1f;
+            }
+            if (Input.GetKeyUp(KeyCode.L) || Input.GetKeyUp(KeyCode.J))
+            {
+                runMod = 0;
+            }
         }
 
         rbody.velocity = new Vector3(runMod * runSpeed, rbody.velocity.y, 0);
 
-        if (Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.I) && grounded)
         {
             Debug.Log("jump");
             rbody.velocity = new Vector3(runSpeed, jumpSpeed, 0);
@@ -57,6 +61,19 @@ public class RunnerScript4 : MonoBehaviour
         if (collision.collider.tag == "terrain")
         {
             grounded = true;
+        }
+
+        if (collision.collider.tag == "MainCamera")
+        {
+            walled = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.tag == "MainCamera")
+        {
+            walled = false;
         }
     }
 }
