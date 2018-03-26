@@ -6728,7 +6728,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 69053497
+  randomSeed: 774158042
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10207,6 +10207,7 @@ GameObject:
   - component: {fileID: 477490415}
   - component: {fileID: 477490414}
   - component: {fileID: 477490420}
+  - component: {fileID: 477490421}
   m_Layer: 0
   m_Name: player4
   m_TagString: Player4
@@ -10338,6 +10339,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.023736, y: 3.7300003, z: 0.20000002}
   m_Center: {x: 0.03442975, y: 0, z: 0}
+--- !u!95 &477490421
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 477490413}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1dfcbda1801a634785852cfbc9f1ced, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &480335395
 GameObject:
   m_ObjectHideFlags: 0
@@ -21070,7 +21088,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1427137802
+  randomSeed: 364495574
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -25644,7 +25662,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1584844107
+  randomSeed: -1829321069
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -37452,6 +37470,7 @@ GameObject:
   - component: {fileID: 1617784246}
   - component: {fileID: 1617784245}
   - component: {fileID: 1617784251}
+  - component: {fileID: 1617784252}
   m_Layer: 0
   m_Name: player3
   m_TagString: Player3
@@ -37583,6 +37602,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.023736, y: 3.7300003, z: 0.20000002}
   m_Center: {x: 0.03442975, y: 0, z: 0}
+--- !u!95 &1617784252
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617784244}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1dfcbda1801a634785852cfbc9f1ced, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1621822962
 GameObject:
   m_ObjectHideFlags: 0
@@ -38846,7 +38882,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1315283622
+  randomSeed: -1535354543
   InitialModule:
     serializedVersion: 3
     enabled: 1
