@@ -8,5 +8,6 @@ public class Task : ScriptableObject
     public Sprite icon = null;
     public bool isDefaultTask = false;
     public GameObject task;
-
+    [Range(0, 0.2f)]
+    public float weight = 0;
 }
