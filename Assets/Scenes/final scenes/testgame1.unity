@@ -2365,7 +2365,7 @@ RectTransform:
   - {fileID: 942199739}
   - {fileID: 621999520}
   m_Father: {fileID: 674596501}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3203,7 +3203,7 @@ GameObject:
   - component: {fileID: 192574925}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3261,7 +3261,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 192574924}
   m_LocalRotation: {x: 0.7017606, y: -0, z: -0, w: 0.7124129}
-  m_LocalPosition: {x: 73.2, y: -3.8, z: 1.5}
+  m_LocalPosition: {x: 73.2, y: -3.5, z: 1.5}
   m_LocalScale: {x: 169.73148, y: 7.4273987, z: 0.7152859}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4415,7 +4415,7 @@ RectTransform:
   - {fileID: 638811817}
   - {fileID: 1121705774}
   m_Father: {fileID: 674596501}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6728,7 +6728,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 139553419
+  randomSeed: 69053497
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10229,13 +10229,12 @@ MonoBehaviour:
 --- !u!114 &477490415
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114100287253239482, guid: 257a67da2c016dc4fab3f6afdda92f26,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 477490413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c191b51afec2df148a40f84b5d8ec75a, type: 3}
+  m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &477490416
@@ -12574,8 +12573,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1374961617}
-  - {fileID: 288066406}
   - {fileID: 156777820}
+  - {fileID: 288066406}
   - {fileID: 2005715086}
   m_Father: {fileID: 83660928}
   m_RootOrder: 0
@@ -12598,9 +12597,9 @@ MonoBehaviour:
   spot4: {fileID: 1879637092}
   spot5: {fileID: 1033680620}
   p4Paused: 0
-  p1Menu: {fileID: 2005715085}
-  player: {fileID: 477490413}
-  player4: {fileID: 2005715085}
+  p1Menu: {fileID: 288066405}
+  player: {fileID: 288066405}
+  player4: {fileID: 288066405}
   task1: {fileID: 1331790575}
   task2: {fileID: 988478297}
   task3: {fileID: 679165809}
@@ -12624,9 +12623,9 @@ MonoBehaviour:
   spot4: {fileID: 942199740}
   spot5: {fileID: 621999521}
   p1Paused: 0
-  p1Menu: {fileID: 156777819}
-  player: {fileID: 1617784244}
-  player1: {fileID: 156777819}
+  p1Menu: {fileID: 2005715085}
+  player: {fileID: 2005715085}
+  player1: {fileID: 2005715085}
   task1: {fileID: 433262461}
   task2: {fileID: 768692086}
   task3: {fileID: 178550575}
@@ -12650,9 +12649,9 @@ MonoBehaviour:
   spot4: {fileID: 638811818}
   spot5: {fileID: 1121705775}
   p1Paused: 0
-  p2Menu: {fileID: 288066405}
-  player: {fileID: 1300452211}
-  player2: {fileID: 288066405}
+  p2Menu: {fileID: 1617784244}
+  player: {fileID: 1617784244}
+  player2: {fileID: 156777819}
   task1: {fileID: 1071124037}
   task2: {fileID: 1872374982}
   task3: {fileID: 976089074}
@@ -21071,7 +21070,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1914940635
+  randomSeed: -1427137802
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -29330,8 +29329,8 @@ GameObject:
   - component: {fileID: 1300452216}
   - component: {fileID: 1300452215}
   - component: {fileID: 1300452214}
-  - component: {fileID: 1300452213}
   - component: {fileID: 1300452212}
+  - component: {fileID: 1300452213}
   - component: {fileID: 1300452218}
   - component: {fileID: 1300452219}
   m_Layer: 0
@@ -29356,13 +29355,12 @@ MonoBehaviour:
 --- !u!114 &1300452213
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114194354952050544, guid: c6b644e4819d04a4b8c29ba3f98f8cb6,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1300452211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0edbbd2b32d2be14abc1cc943866a0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &1300452214
@@ -30352,7 +30350,7 @@ GameObject:
   - component: {fileID: 1373458367}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30410,7 +30408,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373458366}
   m_LocalRotation: {x: 0.7124579, y: -0, z: -0, w: 0.70171493}
-  m_LocalPosition: {x: 315.16, y: -3.76, z: 1.34}
+  m_LocalPosition: {x: 315.16, y: -3.48, z: 1.34}
   m_LocalScale: {x: 88.79295, y: 7.4273987, z: 0.7152859}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36246,7 +36244,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -36293,8 +36291,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5604, y: 8.25823, z: 15.014794}
-  m_Center: {x: 10.059281, y: 0.5619936, z: 7.6845536}
+  m_Size: {x: 3.3634863, y: 8.25823, z: 15.014794}
+  m_Center: {x: 11.005777, y: 0.5619936, z: 7.6845536}
 --- !u!114 &1538078118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37476,13 +37474,12 @@ MonoBehaviour:
 --- !u!114 &1617784246
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114680321959437674, guid: d83e274f9b47f2d48a46dfc8a3893feb,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1617784244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edbbd2b32d2be14abc1cc943866a0e8, type: 3}
+  m_Script: {fileID: 11500000, guid: c191b51afec2df148a40f84b5d8ec75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &1617784247
@@ -38849,7 +38846,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 303842296
+  randomSeed: -1315283622
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -46358,7 +46355,7 @@ GameObject:
   - component: {fileID: 2068064048}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -46416,7 +46413,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068064047}
   m_LocalRotation: {x: 0.7027363, y: -0, z: -0, w: 0.71145034}
-  m_LocalPosition: {x: 212.73, y: -3.8, z: 1.3}
+  m_LocalPosition: {x: 212.73, y: -3.61, z: 1.3}
   m_LocalScale: {x: 88.79295, y: 7.4273987, z: 0.7152859}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47647,7 +47644,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 164899717
+  randomSeed: 265745357
   InitialModule:
     serializedVersion: 3
     enabled: 1

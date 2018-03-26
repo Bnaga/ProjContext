@@ -6,11 +6,12 @@ public class RunnerScript : MonoBehaviour {
 
     // Use this for initialization
     private Rigidbody rbody;
-    private float runSpeed = 15;
+    private float runSpeed = 12.5f;
     private float runMod = 0;
     //public int currentClass = 0;
-    private float jumpSpeed = 10;
+    private float jumpSpeed = 6;
     private bool grounded = true;
+    private bool walled = false;
 	void Start ()
     {
         rbody = this.gameObject.GetComponent<Rigidbody>();
@@ -22,22 +23,25 @@ public class RunnerScript : MonoBehaviour {
         //rbody.AddForce(new Vector3(runSpeed, 0, 0));
         //float move = Input.GetAxis("Horizontal");
         //rbody.velocity = new Vector3(move * runSpeed, rbody.velocity.y, 0);
-        if(Input.GetKeyDown(KeyCode.D))
+        if (!walled)
         {
-            runMod = 1f;
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            runMod = -1f;
-        }
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-        {
-            runMod = 0;
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                runMod = 1f;
+            }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                runMod = -1f;
+            }
+            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+            {
+                runMod = 0;
+            }
         }
 
         rbody.velocity = new Vector3(runMod*runSpeed, rbody.velocity.y, 0);
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && grounded)
         {
             Debug.Log("jump");
             rbody.velocity = new Vector3(runSpeed*runMod, jumpSpeed, 0);
@@ -58,6 +62,19 @@ public class RunnerScript : MonoBehaviour {
         if(collision.collider.tag == "terrain" )
         {
             grounded = true;
+        }
+
+        if(collision.collider.tag == "MainCamera")
+        {
+            walled = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.tag == "MainCamera")
+        {
+            walled = false;
         }
     }
 }
