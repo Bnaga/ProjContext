@@ -15,13 +15,15 @@ public class SceneLoader : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+
         //If the player has pressed the space bar and a new scene is not loading yet
-        if (Input.GetKeyUp(KeyCode.Space) && loadScene == false)
+        if (Input.GetMouseButtonDown(0) && loadScene == false)
         {
             //set the loadScene boolean to true to prevent loading a new scene
             loadScene = true;
 
-            loadingText.text = "Loading...";
+            loadingText.text = "LOADING...";
 
             StartCoroutine(LoadNewScene());
         }
@@ -29,6 +31,7 @@ public class SceneLoader : MonoBehaviour {
         if (loadScene == true)
         {
             loadingText.color = new Color(loadingText.color.r, loadingText.color.g, loadingText.color.b, Mathf.PingPong(Time.time, 1));
+            
         }
     }
 
@@ -36,12 +39,12 @@ public class SceneLoader : MonoBehaviour {
         IEnumerator LoadNewScene()
         {
 
-            // This line waits for 3 seconds before executing the next line in the coroutine.
-            // This line is only necessary for this demo. The scenes are so simple that they load too fast to read the "Loading..." text.
-            yield return new WaitForSeconds(3);
+        // This line waits for 3 seconds before executing the next line in the coroutine.
+        // This line is only necessary for this demo. The scenes are so simple that they load too fast to read the "Loading..." text.
+        yield return new WaitForSeconds(3);
 
-            // Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
-            AsyncOperation async = Application.LoadLevelAsync(scene);
+        // Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
+        AsyncOperation async = Application.LoadLevelAsync(scene);
 
             // While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
             while (!async.isDone)
