@@ -32,7 +32,7 @@ public class P2Menu : MonoBehaviour {
     //public GameObject taskObj4;
     public Button task5;
     //public GameObject taskObj5;
-    // Use this for initialization
+    // Use this for initializationz
     void Start()
     {
         planning = PersonalPlanning.instance;
@@ -77,7 +77,7 @@ public class P2Menu : MonoBehaviour {
             Time.timeScale = 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.Keypad4))
         {
             p1Paused = !p1Paused;
         }

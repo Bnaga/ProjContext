@@ -6,23 +6,41 @@ public class RunnerScript : MonoBehaviour {
 
     // Use this for initialization
     private Rigidbody rbody;
-    private float runSpeed = 12.5f;
+    //private float runSpeed = 12.5f;
+    private float runSpeed = 17;
+    private float originalSpeed;
     private float runMod = 0;
     //public int currentClass = 0;
-    private float jumpSpeed = 6;
+    private float jumpSpeed = 8;
     private bool grounded = true;
     private bool walled = false;
-	void Start ()
+    private float weight = 0;
+    private float oldWeight = 0;
+
+    PersonalPlanning planning;
+
+    void Start ()
     {
+        planning = PersonalPlanning.instance;
         rbody = this.gameObject.GetComponent<Rigidbody>();
-	}
+        originalSpeed = runSpeed;
+        weight = planning.GetWeightP1();
+        oldWeight = weight;
+        runSpeed -= weight * runSpeed;
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        //rbody.AddForce(new Vector3(runSpeed, 0, 0));
-        //float move = Input.GetAxis("Horizontal");
-        //rbody.velocity = new Vector3(move * runSpeed, rbody.velocity.y, 0);
+        weight = planning.GetWeightP1();
+        Debug.Log(weight);
+        Debug.Log(runSpeed);
+        if(weight != oldWeight)
+        {
+            runSpeed = originalSpeed - (weight * originalSpeed);
+            oldWeight = weight;
+        }
+        //weight = planning.GetWeightP1();
         if (!walled)
         {
             if (Input.GetKeyDown(KeyCode.D))

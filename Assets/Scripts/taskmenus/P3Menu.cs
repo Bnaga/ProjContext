@@ -32,6 +32,7 @@ public class P3Menu : MonoBehaviour {
     //public GameObject taskObj4;
     public Button task5;
     //public GameObject taskObj5;
+
     // Use this for initialization
     void Start()
     {
@@ -77,7 +78,7 @@ public class P3Menu : MonoBehaviour {
             Time.timeScale = 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad4))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             p1Paused = !p1Paused;
         }

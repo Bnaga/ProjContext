@@ -172,4 +172,52 @@ public class PersonalPlanning : MonoBehaviour {
         return tasksP4.Count;
     }
     #endregion
+
+    #region getWeight
+
+    public float GetWeightP1()
+    {
+        float thisWeight = 0;
+        for (int i = 0; i< tasksP1.Count; i++)
+        {
+            thisWeight += tasksP1[i].weight;
+        }
+
+        return thisWeight;
+    }
+
+    public float GetWeightP2()
+    {
+        float thisWeight = 0;
+        for (int i = 0; i < tasksP2.Count; i++)
+        {
+            thisWeight += tasksP2[i].weight;
+        }
+
+        return thisWeight;
+    }
+
+    public float GetWeightP3()
+    {
+        float thisWeight = 0;
+        for (int i = 0; i < tasksP3.Count; i++)
+        {
+            thisWeight += tasksP3[i].weight;
+        }
+
+        return thisWeight;
+    }
+
+    public float GetWeightP4()
+    {
+        float thisWeight = 0;
+        for (int i = 0; i < tasksP4.Count; i++)
+        {
+            thisWeight += tasksP4[i].weight;
+        }
+
+        return thisWeight;
+    }
+
+    #endregion
 }
