@@ -77,7 +77,7 @@ public class P4Menu : MonoBehaviour {
             Time.timeScale = 1f;
         }
 
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
             p4Paused = !p4Paused;
         }

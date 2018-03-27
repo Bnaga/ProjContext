@@ -9,6 +9,19 @@ public class TaskSpot : MonoBehaviour {
 
     Task task;
 
+    public RunnerScript runner1;
+    public RunnerScript3 runner2;
+    public RunnerScript4 runner3;
+    public RunnerScript2 runner4;
+
+    void Start()
+    {
+        runner1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<RunnerScript>();
+        runner2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<RunnerScript3>();
+        runner3 = GameObject.FindGameObjectWithTag("Player3").GetComponent<RunnerScript4>();
+        runner4 = GameObject.FindGameObjectWithTag("Player4").GetComponent<RunnerScript2>();
+    }
+
     public void AddTask(Task newTask)
     {
         task = newTask;
