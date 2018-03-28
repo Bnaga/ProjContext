@@ -11,8 +11,8 @@ public class EndScript : MonoBehaviour {
     bool p4 = true;
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,9 +33,17 @@ public class EndScript : MonoBehaviour {
             p4 = false;
         }
 
-        if(!p1 && !p2 && !p3 && !p4)
+        if(Input.GetKeyDown(KeyCode.F12))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+
+
+        if (!p1 && !p2 && !p3 && !p4)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        
     }
 }
