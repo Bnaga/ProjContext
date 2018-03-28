@@ -10522,7 +10522,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 477490413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0edbbd2b32d2be14abc1cc943866a0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &477490416
@@ -12992,9 +12992,9 @@ MonoBehaviour:
   spot4: {fileID: 1879637092}
   spot5: {fileID: 1033680620}
   p4Paused: 0
-  p1Menu: {fileID: 288066405}
-  player: {fileID: 288066405}
-  player4: {fileID: 288066405}
+  p1Menu: {fileID: 2005715085}
+  player: {fileID: 477490413}
+  player4: {fileID: 2005715085}
   task1: {fileID: 1331790575}
   task2: {fileID: 988478297}
   task3: {fileID: 679165809}
@@ -13018,9 +13018,9 @@ MonoBehaviour:
   spot4: {fileID: 942199740}
   spot5: {fileID: 621999521}
   p1Paused: 0
-  p1Menu: {fileID: 2005715085}
-  player: {fileID: 2005715085}
-  player1: {fileID: 2005715085}
+  p1Menu: {fileID: 288066405}
+  player: {fileID: 1300452211}
+  player1: {fileID: 288066405}
   task1: {fileID: 433262461}
   task2: {fileID: 768692086}
   task3: {fileID: 178550575}
@@ -30017,8 +30017,8 @@ GameObject:
   - component: {fileID: 1300452216}
   - component: {fileID: 1300452215}
   - component: {fileID: 1300452214}
-  - component: {fileID: 1300452212}
   - component: {fileID: 1300452213}
+  - component: {fileID: 1300452212}
   - component: {fileID: 1300452218}
   - component: {fileID: 1300452219}
   m_Layer: 0
@@ -30048,7 +30048,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300452211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edbbd2b32d2be14abc1cc943866a0e8, type: 3}
+  m_Script: {fileID: 11500000, guid: c191b51afec2df148a40f84b5d8ec75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &1300452214
@@ -38154,8 +38154,8 @@ GameObject:
   - component: {fileID: 1617784249}
   - component: {fileID: 1617784248}
   - component: {fileID: 1617784247}
-  - component: {fileID: 1617784246}
   - component: {fileID: 1617784245}
+  - component: {fileID: 1617784246}
   - component: {fileID: 1617784251}
   - component: {fileID: 1617784252}
   m_Layer: 0
@@ -38185,7 +38185,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617784244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c191b51afec2df148a40f84b5d8ec75a, type: 3}
+  m_Script: {fileID: 11500000, guid: 238929c28362fe94c8e51e808a363740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &1617784247
