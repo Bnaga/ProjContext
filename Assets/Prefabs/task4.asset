@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: task4
   m_EditorClassIdentifier: 
   taskName: Task 4
-  icon: {fileID: 21300000, guid: 15d8f6024b3767247b2ccd41fecd2921, type: 3}
+  icon: {fileID: 21300000, guid: 57d80dd07f4822e4584ef8034e5e2fca, type: 3}
   isDefaultTask: 0
   task: {fileID: 1265583429042716, guid: 554d22d11db3e844bacc69573762407e, type: 2}
-  weight: 0.15
+  weight: 0.1
