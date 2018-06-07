@@ -11,7 +11,7 @@ public class RunnerScript : MonoBehaviour {
     private float originalSpeed;
     private float runMod = 0;
     //public int currentClass = 0;
-    private float jumpSpeed = 8;
+    private float jumpSpeed = 12;
     private bool grounded = true;
     private bool walled = false;
     private float weight = 0;
