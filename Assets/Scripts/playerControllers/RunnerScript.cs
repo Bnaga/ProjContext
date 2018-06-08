@@ -7,7 +7,7 @@ public class RunnerScript : MonoBehaviour {
     // Use this for initialization
     private Rigidbody rbody;
     //private float runSpeed = 12.5f;
-    private float runSpeed = 17;
+    public float runSpeed = 17;
     private float originalSpeed;
     private float runMod = 0;
     //public int currentClass = 0;

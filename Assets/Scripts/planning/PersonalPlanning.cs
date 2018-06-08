@@ -27,7 +27,7 @@ public class PersonalPlanning : MonoBehaviour {
 
     public int space = 5;
 
-    public List<Task> tasksP1 = new List<Task>();
+    public List<Task> tasksP1 = new List<Task>(); 
     public List<Task> tasksP2 = new List<Task>();
     public List<Task> tasksP3 = new List<Task>();
     public List<Task> tasksP4 = new List<Task>();
