@@ -51,8 +51,8 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 9
     m_Resolution: 2
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000006, guid: 83abbb22c2b8eac4a960fdae366c69fd,
+  m_LightingDataAsset: {fileID: 112000002, guid: 83abbb22c2b8eac4a960fdae366c69fd,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -5277,7 +5277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351323305}
   - component: {fileID: 351323304}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Test_Stone_Street_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5317,7 +5317,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 492142728a098ee4181d43df542461a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16700,7 +16700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866515004}
   - component: {fileID: 866515005}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16714,7 +16714,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866515003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31, y: -0.18, z: -5.68}
+  m_LocalPosition: {x: 0.31, y: 0.36, z: -7.4}
   m_LocalScale: {x: 3.3292406, y: 3.329241, z: 3.329241}
   m_Children: []
   m_Father: {fileID: 351323305}
@@ -16730,12 +16730,12 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 12.48
+  m_Intensity: 5.78
   m_Range: 10.00922
-  m_SpotAngle: 90.856575
+  m_SpotAngle: 85
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -16745,13 +16745,13 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 7.187744, y: 10.29496}
-  m_BounceIntensity: 0
+  m_BounceIntensity: 14.13
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -16928,7 +16928,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.10586071, g: 0.12084298, b: 0.16176468, a: 1}
-  m_Intensity: 5.24
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -45935,7 +45935,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1895368696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.151, y: 1.71, z: -5.68}
+  m_LocalPosition: {x: 0.151, y: 1.548, z: -6.368}
   m_LocalScale: {x: 2.0641415, y: 2.0641413, z: 2.0641413}
   m_Children: []
   m_Father: {fileID: 175453427}
@@ -45953,7 +45953,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 12.48
   m_Range: 10.00922
-  m_SpotAngle: 71.078316
+  m_SpotAngle: 71.272545
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -45975,7 +45975,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_ShadowRadius: 0
+  m_ShadowRadius: 1
   m_ShadowAngle: 0
 --- !u!1 &1895854249
 GameObject:
