@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FinishScript : MonoBehaviour {
 
-    int playerCount = 0;
+    public int playerCount = 0;
     public float timeLim = 15;
     // Use this for initialization
     void Start ()
@@ -28,7 +28,7 @@ public class FinishScript : MonoBehaviour {
 
 		if(playerCount == 4)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(6);
         }
 	}
 
