@@ -23,12 +23,12 @@ public class WallScript : MonoBehaviour {
         //rbody.velocity = new Vector3(wallSpeed, 0, 0);
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if(collision.collider.tag.Contains("Player"))
+        if(collider.tag.Contains("Player"))
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Destroy(collision.collider.gameObject);
+            Destroy(collider.gameObject);
         }
     }
 

@@ -8,9 +8,10 @@ public class FinishScript : MonoBehaviour {
     int playerCount = 0;
     public float timeLim = 15;
     // Use this for initialization
-    void Start () {
-		
-	}
+    void Start ()
+    {
+        playerCount = 0;
+    }
 	
 	// Update is called once per frame
 	void Update ()
