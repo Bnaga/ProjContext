@@ -7,7 +7,7 @@ public class RunnerScript3 : MonoBehaviour
 
     private Rigidbody rbody;
     //private float runSpeed = 12.5f;
-    private float runSpeed = 17f;
+    public float runSpeed = 17f;
     private float originalSpeed;
     private float runMod = 0;
     //public int currentClass = 0;
