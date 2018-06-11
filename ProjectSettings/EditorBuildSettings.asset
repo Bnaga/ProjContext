@@ -4,4 +4,28 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/final scenes/Mainmenu.unity
+    guid: 0f721aec062f1d947b152f84ca21faa6
+  - enabled: 1
+    path: Assets/Scenes/FirstTutorial.unity
+    guid: d4cfc50cc25517242a6ae0d0985372d9
+  - enabled: 1
+    path: Assets/Scenes/final scenes/plan.unity
+    guid: f329cfc45a1a1fc49818809802960d96
+  - enabled: 1
+    path: Assets/Scenes/SecondTutorial.unity
+    guid: 700e3634c689ebd43b459f08f189c6bc
+  - enabled: 1
+    path: Assets/Scenes/final scenes/testgame1.unity
+    guid: 48bd5038186dfb04c9fa9c0eccb6f864
+  - enabled: 1
+    path: Assets/Scenes/final scenes/gameovertest.unity
+    guid: c23d5eab2c07d3541b8546fbfbd734af
+  - enabled: 1
+    path: Assets/Scenes/final scenes/video.unity
+    guid: b2cb427629173e1489be71cee1b06b8b
+  - enabled: 1
+    path: Assets/Scenes/final scenes/finish.unity
+    guid: 36a0543a16d88854d83ce194c24a0969
